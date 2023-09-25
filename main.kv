@@ -1,0 +1,18 @@
+<DrawerClickableItem@MDNavigationDrawerItem>
+MDScreen:
+    MDNavigationLayout:
+        MDScreenManager:
+            MDScreen:
+                MDTopAppBar:
+                    title:"IT"
+                    left_action_items:[['menu',lambda x:nav_drawer.set_state('open')]]
+                    pos_hint:{"top":1}
+        MDNavigationDrawer:
+            id:nav_drawer
+            MDNavigationDrawerMenu:
+                MDNavigationDrawerHeader:
+                    title:"drawer"
+                    text:"drwaer"
+                DrawerClickableItem:
+                    icon:"gmail"
+                    text:"Inbox"
